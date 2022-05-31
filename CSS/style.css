@@ -62,5 +62,5 @@ tr:nth-child(2n) .sticky{
 }
 /*Carousel*/
 .carousel > .slide >.carousel-inner >.carousel-item > img {
-    height: 100px;
+    height: 500px;
   }
