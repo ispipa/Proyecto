@@ -97,164 +97,7 @@
                 </button>
         </div>
   <!-- Section END Carousel -->
-  <!--Section table-->
-    <!---<table class="font" id="table">
-        <tbody>
-            <tr style="">                    
-            <form id="filtrar" action="/listarAlumnos/Filtrado" method="POST"></form>
-                <input type="hidden" name="csrfmiddlewaretoken" value="783GSncrnYrxt3k1GnVCUzWn1fEsRm8e9Mx94clrSDiKrsTw0i5tyBSbH57xfLoE">
-                
-                    
-                        <th class="sticky2 mt-2" style="z-index: 2;">
-                            <div>
-                                <label class="label-formul">
-                                    <span class="span-formul">Nombre</span>
-                                    <input class="input-formul" type="text" name="nombre" value="" onkeyup="filtrar(this,event)">
-                                </label>
-                            </div>
-                        </th>
-                        <th style="z-index: 1;">
-                            <div>
-                                <label class="label-formul">
-                                    <span class="span-formul">Apellidos</span>
-                                    <input class="input-formul" type="text" name="apellidos" value="" onkeyup="filtrar(this,event)">
-                                </label>
-                            </div>
-                        </th>
-                    <th style="z-index: 1;">
-                        <div>
-                            <label class="label-formul">                        
-                                <select class="border-0 bg-transparent fw-bold" role="button" name="sexo" onchange="filtrar(this,event)">
-                                    <option>Sexo</option>
-                                    <option>Hombre</option>
-                                    <option>Mujer</option>
-                                </select>
-                                
-                            </label>
-                            
-                        </div>
-                    </th>
-                        <th style="z-index: 1;">
-                            <div>
-                                <label class="label-formul">
-                                    <span class="span-formul">Email</span>
-                                    <input class="input-formul" type="text" name="email" value="" onkeyup="filtrar(this,event)">
-                                </label>
-                            </div>
-                        </th>
-                        <th style="z-index: 1;">
-                            <div>
-                                <label class="label-formul">
-                                    <span class="span-formul">Telefono</span>
-                                    <input class="input-formul" type="text" name="telefono" value="" onkeyup="filtrar(this,event)">
-                                </label>
-                            </div>
-                        </th>             
-                <th style="z-index: 1;">
-                    <div>
-                    </div>
-                </th>
-        </tr>
-            <tr style="">    
-                <td class="sticky">Daniel</td>
-                <td>Hernandez Zamora</td>
-                <td>Hombre</td>
-                <td>daniel140.hz@gmail.com</td>
-                <td>633199084</td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/1/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/1" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(1)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="">    
-                <td class="sticky">Lucia</td>
-                <td>Ortiz Fernandez</td>
-                <td>Mujer</td>
-                <td>lululove@gmail.com</td>
-                <td>+34 677 388 965</td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/2/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/2" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(2)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="">    
-                <td class="sticky">Pablo</td>
-                <td>Lopez</td>
-                <td>Hombre</td>
-                <td>survi@gmail.com</td>
-                <td>644356987</td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/3/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/3" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(3)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="">    
-                <td class="sticky">Hector</td>
-                <td>Fernandez Ortiz</td>
-                <td>Hombre</td>
-                <td>vini@gmail.com</td>
-                <td>654433456</td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/4/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/4" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(4)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="">    
-                <td class="sticky">Pablo</td>
-                <td>Cruz</td>
-                <td>Hombre</td>
-                <td><div class="text-danger">No guardado</div></td>
-                <td><div class="text-danger">No guardado</div></td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/14/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/14" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(14)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="display: none;">    
-                <td class="sticky">Ismael</td>
-                <td>Cruz Cabezas</td>
-                <td>Hombre</td>
-                <td>ispipa@gmail.com</td>
-                <td><div class="text-danger">No guardado</div></td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/15/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/15" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(15)">delete</i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr style="display: none;">    
-                <td class="sticky">uyg</td>
-                <td>tyf</td>
-                <td>Hombre</td>
-                <td><div class="text-danger">No guardado</div></td>
-                <td><div class="text-danger">No guardado</div></td>
-                <td>
-                    <div class=" d-flex flex-row justify-content-end">
-                        <a style="color:rgb(223, 86, 86);" href="detallesAlumno/38/none" role="button"><i class="material-icons text-warning">visibility</i></a>
-                        <a class="mx-4" href="modificarAlumno/38" role="button"><i class="material-icons">edit</i></a>
-                        <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(38)">delete</i></a>
-                    </div>
-                </td>
-            </tr>    
-        </tbody>
-    </table>-->
+  <!--Section form-->
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -277,10 +120,168 @@
                   </form>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-
+<!--Section table--->
+                <table class="font" id="table">
+                    <tbody>
+                        <tr style="">                    
+                        <form id="filtrar" action="/listarAlumnos/Filtrado" method="POST"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="783GSncrnYrxt3k1GnVCUzWn1fEsRm8e9Mx94clrSDiKrsTw0i5tyBSbH57xfLoE">
+                            
+                                
+                                    <th class="sticky2 mt-2" style="z-index: 2;">
+                                        <div>
+                                            <label class="label-formul">
+                                                <span class="span-formul">Nombre</span>
+                                                <input class="input-formul" type="text" name="nombre" value="" onkeyup="filtrar(this,event)">
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th style="z-index: 1;">
+                                        <div>
+                                            <label class="label-formul">
+                                                <span class="span-formul">Apellidos</span>
+                                                <input class="input-formul" type="text" name="apellidos" value="" onkeyup="filtrar(this,event)">
+                                            </label>
+                                        </div>
+                                    </th>
+                                <th style="z-index: 1;">
+                                    <div>
+                                        <label class="label-formul">                        
+                                            <select class="border-0 bg-transparent fw-bold" role="button" name="sexo" onchange="filtrar(this,event)">
+                                                <option>Sexo</option>
+                                                <option>Hombre</option>
+                                                <option>Mujer</option>
+                                            </select>
+                                            
+                                        </label>
+                                        
+                                    </div>
+                                </th>
+                                    <th style="z-index: 1;">
+                                        <div>
+                                            <label class="label-formul">
+                                                <span class="span-formul">Email</span>
+                                                <input class="input-formul" type="text" name="email" value="" onkeyup="filtrar(this,event)">
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th style="z-index: 1;">
+                                        <div>
+                                            <label class="label-formul">
+                                                <span class="span-formul">Telefono</span>
+                                                <input class="input-formul" type="text" name="telefono" value="" onkeyup="filtrar(this,event)">
+                                            </label>
+                                        </div>
+                                    </th>             
+                            <th style="z-index: 1;">
+                                <div>
+                                </div>
+                            </th>
+                    </tr>
+                        <tr style="">    
+                            <td class="sticky">Daniel</td>
+                            <td>Hernandez Zamora</td>
+                            <td>Hombre</td>
+                            <td>daniel140.hz@gmail.com</td>
+                            <td>633199084</td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/1/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/1" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(1)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="">    
+                            <td class="sticky">Lucia</td>
+                            <td>Ortiz Fernandez</td>
+                            <td>Mujer</td>
+                            <td>lululove@gmail.com</td>
+                            <td>+34 677 388 965</td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/2/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/2" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(2)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="">    
+                            <td class="sticky">Pablo</td>
+                            <td>Lopez</td>
+                            <td>Hombre</td>
+                            <td>survi@gmail.com</td>
+                            <td>644356987</td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/3/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/3" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(3)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="">    
+                            <td class="sticky">Hector</td>
+                            <td>Fernandez Ortiz</td>
+                            <td>Hombre</td>
+                            <td>vini@gmail.com</td>
+                            <td>654433456</td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/4/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/4" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(4)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="">    
+                            <td class="sticky">Pablo</td>
+                            <td>Cruz</td>
+                            <td>Hombre</td>
+                            <td><div class="text-danger">No guardado</div></td>
+                            <td><div class="text-danger">No guardado</div></td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/14/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/14" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(14)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">    
+                            <td class="sticky">Ismael</td>
+                            <td>Cruz Cabezas</td>
+                            <td>Hombre</td>
+                            <td>ispipa@gmail.com</td>
+                            <td><div class="text-danger">No guardado</div></td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/15/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/15" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(15)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">    
+                            <td class="sticky">uyg</td>
+                            <td>tyf</td>
+                            <td>Hombre</td>
+                            <td><div class="text-danger">No guardado</div></td>
+                            <td><div class="text-danger">No guardado</div></td>
+                            <td>
+                                <div class=" d-flex flex-row justify-content-end">
+                                    <a style="color:rgb(223, 86, 86);" href="detallesAlumno/38/none" role="button"><i class="material-icons text-warning">visibility</i></a>
+                                    <a class="mx-4" href="modificarAlumno/38" role="button"><i class="material-icons">edit</i></a>
+                                    <a style="color:red;" role="button"><i class="material-icons me-3" onclick="AlertaBorrado(38)">delete</i></a>
+                                </div>
+                            </td>
+                        </tr>    
+                    </tbody>
+                </table>
+<!--Section end table--->
             </div>
         </div>
     </div>
-    <!--Section End table-->
+<!--Section end form--->
   </body>
 </html>
