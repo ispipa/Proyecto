@@ -23,3 +23,39 @@ tr:nth-child(1n) .sticky{
 tr:nth-child(2n) .sticky{
     background-color: rgb(239,248,254);
 }
+.label-formul {
+    border-bottom: 2px solid black;
+    padding: 4px 10px;
+    position: relative;
+}
+
+ .label-formul .input-formul{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.select-formul{
+    background-color: rgb(239,239,239); 
+}
+
+ .label-formul .span-formul{
+
+    color: Black;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: .25s;
+}
+.label-formul .span-formul, .label-formul span.top{
+    font-weight: bold;
+}
+
+.label-formul span.top {
+    color: rgb(1,119,139);
+    left: 2px;
+    top: -10px;
+    background: transparent;
+    font-size: 12px;
+    padding: 0 5px;
+}
