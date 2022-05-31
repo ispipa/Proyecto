@@ -60,6 +60,7 @@ tr:nth-child(2n) .sticky{
     font-size: 12px;
     padding: 0 5px;
 }
+/*Carousel*/
 .carousel, .carousel-inner > .item > img {
     height: 100px;
   }
