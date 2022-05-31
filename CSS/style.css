@@ -29,7 +29,8 @@ tr:nth-child(2n) .sticky{
     position: relative;
 }
 
- .label-formul .input-formul{
+ .label-formul .input-formul
+ {
     border: none;
     background: transparent;
     outline: none;
