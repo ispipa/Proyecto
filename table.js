@@ -16,4 +16,11 @@
                 input.previousElementSibling.classList.remove('focus');
             }
 });*/
-console.log("Tengo que hacer una prueba");
+window.addEventListener('load', () => {
+    fetch('https://ispipa.github.io/Proyecto/supermercados.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(typeof data);
+        document.querySelector('#resultado').innerHTML = JSON.stringify(data);
+    })
+})
