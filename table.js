@@ -1,4 +1,5 @@
-const inputs = document.querySelectorAll('input.input-formul');
+//Inputs
+/*const inputs = document.querySelectorAll('input.input-formul');
         inputs.forEach(input => {
             if (input.value.trim().length != 0 && !input.previousElementSibling.classList.contains('top')) {
                 input.previousElementSibling.style.transition='0s';
@@ -14,5 +15,5 @@ const inputs = document.querySelectorAll('input.input-formul');
                 }
                 input.previousElementSibling.classList.remove('focus');
             }
-});
+});*/
 console.log("Tengo que hacer una prueba");
