@@ -33,7 +33,7 @@ request.onload = function() {
 
   function populateHeader(jsonObj)
    {
-       var div2= document.getElementById("json");
+    var div2= document.getElementById("json");
     const myDiv = document.createElement('div');
     myDiv.textContent = jsonObj['squadName'];
     div2.appendChild(myDiv);
