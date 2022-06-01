@@ -15,3 +15,4 @@ const inputs = document.querySelectorAll('input.input-formul');
                 input.previousElementSibling.classList.remove('focus');
             }
 });
+console.log("Tengo que hacer una prueba");
