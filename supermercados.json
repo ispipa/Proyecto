@@ -1,5 +1,5 @@
 {
-    "supermercados":[{
+    "supermercados":{
         "supermercado1": {
             "dia": {
                 "categorias": [{
@@ -1750,5 +1750,5 @@
                 }]
             }
         }       
-}]
+}
 }
