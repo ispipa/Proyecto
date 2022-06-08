@@ -734,7 +734,7 @@ const supermercados =[
     },
     //cambiar a partir de aqui
     {
-        supermercado : "ahorramas",
+        supermercado : "ahorraMas",
         categorias:{
             platos_preparados:{
                 0:{
