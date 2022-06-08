@@ -64,3 +64,10 @@ tr:nth-child(2n) .sticky{
 {
     margin-top: 2rem;
 }
+
+
+@media screen and (max-width: 400px) {
+    #carouselExampleCaptions {
+        display: none;
+    }
+}
