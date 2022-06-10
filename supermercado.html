@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <script src="table.js"></script>
+    <script src="supermercado.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>Supermercados</title>
   </head>
@@ -57,21 +57,21 @@
                       </div>
                       <div class="carousel-inner">
                       <div class="carousel-item active">
-                          <img src="https://s1.eestatic.com/2022/01/25/sociedad/consumo/645196281_221380905_1706x960.jpg" class="d-block w-100" alt="..." height="700px">
+                          <img src="https://s1.eestatic.com/2022/01/25/sociedad/consumo/645196281_221380905_1706x960.jpg" class="d-block w-100" alt="..." height="500px">
                           <div class="carousel-caption d-none d-md-block">
                           <h5></h5>
                           <p></p>
                           </div>
                       </div>
                       <div class="carousel-item">
-                          <img src="https://hablemosdeempresas.com/wp-content/uploads/sites/2/2017/08/shop-mercadona.jpg" class="d-block w-100" alt="..." height="700px">
+                          <img src="https://hablemosdeempresas.com/wp-content/uploads/sites/2/2017/08/shop-mercadona.jpg" class="d-block w-100" alt="..." height="500px">
                           <div class="carousel-caption d-none d-md-block">
                           <h5></h5>
                           <p></p>
                           </div>
                       </div>
                       <div class="carousel-item">
-                          <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/11/209088-cyber-monday-carrefour.jpg?itok=EjVJ5qj_" class="d-block w-100" alt="..." height="700px">
+                          <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/11/209088-cyber-monday-carrefour.jpg?itok=EjVJ5qj_" class="d-block w-100" alt="..." height="500px">
                           <div class="carousel-caption d-none d-md-block">
                           <h5></h5>
                           <p></p>
@@ -93,38 +93,31 @@
     <!--Section END Carousel -->
     <!--Section Form-->
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Busquedas</h5>
-                </div>
-                <div class="card-body">
-                  <form name="formulario" method="post">
-                    <div class="form-group">
-                      <label for="supermercados">Supermercados</label>
-                      <br>
-                      <br>
-                      <input type="text" class="form-control" id="supermercados" list="items" placeholder="Coloca el supermercado...">
-                      <datalist id="items">
-                        <option>Mercadona</option>
-                        <option>Carrefour</option>
-                        <option>Dia</option>
-                        <option>Lidl</option>
-                        <option>AhorraMas</option>
-                        <option>Esclat</option>
-                        <option>HiperCor</option>
-                        <option>El Corte Ingles</option>
-                        <option>Aldi</option>
-                        <option>Alcampo</option>
-                      </datalist>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-primary">Buscar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h4>Supermercados</h4>
+          </div>
+            <br>
+            <hr>
+          <div class="container_busqueda">
+            <input type="text" id="buscar" placeholder="Buscar">
+            <button type="button" class="btn btn-primary" id="busqueda">Buscar</button>
+            <script>
+              var buscar = document.getElementById('buscar');
+              var busqueda = document.getElementById('busqueda');
+              
+
+              busqueda.addEventListener("click", supermercado);
+
+              function supermercado(){
+                var ul = document.getElementById('superLista');
+                var li = document.createElement('li');
+
+                superLista.appendChild(li);
+                li.innerHTML = buscar.value;
+              }
+            </script>
+            <ul class="listaSuper" id="superLista">
+            </ul>
           </div>
         </div>
     <!--Section End Form-->

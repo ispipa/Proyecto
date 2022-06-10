@@ -65,6 +65,36 @@ tr:nth-child(2n) .sticky{
     margin-top: 2rem;
 }
 
+#boton{
+    background-color: rgb(1,119,139);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container_busqueda {
+    display:flex;
+    margin-bottom: 1rem;
+}
+
+.container_busqueda input{
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(239,239,239);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.container_busqueda, .listaSuper{
+    margin-bottom: 1rem;
+    align-content: flex-end
+    
+}
+
 @media screen and (max-width: 400px) {
     #carouselExampleCaptions {
         display: none;
