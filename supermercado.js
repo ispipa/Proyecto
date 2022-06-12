@@ -1,13 +1,14 @@
-function supermercado(){
-    let input = document.getElementById("buscar").value;
-    let busqueda = document.getElementById("busqueda");
-    let ul = document.getElementById("listaSuper");
-    let li = document.getElementById("itemLista");
-    let supermercados = [""];
+var buscar = document.getElementById('buscar');
+var busqueda = document.getElementById('busqueda');
 
-    for (let i = 0; i < supermercados.length; i++) {
-        let li = document.createElement("li");
-        li.appendChild(document.createTextNode(supermercados[i]));
-        ul.appendChild(li);
-    }
+busqueda.addEventListener("click", supermercado);
+
+function supermercado(){
+  var ul = document.getElementById('superLista');
+  var li = document.createElement('li');
+  var btn = document.createElement('button');
+
+  superLista.appendChild(li);
+  superLista.appendChild(btn);
+  li.innerHTML = buscar.value;
 }
