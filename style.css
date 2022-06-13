@@ -104,6 +104,7 @@ tr:nth-child(2n) .sticky{
     margin: 20px;
     float: right;
     justify-content: space-around;
+    height: auto;
 }
 
 #superLista button{

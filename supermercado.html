@@ -119,41 +119,7 @@
             <button type="button" class="btn btn-primary" id="busqueda">Buscar</button>
           </div>
         </div>
-        <script>
-
-          var buscar = document.getElementById('buscar');
-          var busqueda = document.getElementById('busqueda');
-          var ul = document.getElementById('superLista');
-          
-          var li = document.createElement('li');
-          var btn = document.createElement('button');
-
-          busqueda.addEventListener("click", function(){
-
-            li.innerHTML = buscar.value;
-            ul.appendChild(li);
-           
-
-            ul.appendChild(btn);
-            btn.innerHTML = "Eliminar";
-          });
-
-          superLista.addEventListener("click", eliminarAccindental, eliminar); 
-
-          function eliminar(){
-
-            ul.removeChild(li);
-            ul.removeChild(btn);
-          }
-
-          function eliminarAccindental(){
-
-            if (addEventListener) "click", eliminar 
-              if (confirm("Desea eliminar el supermercado?")) {
-                eliminar();
-              }
-            }
-      </script>
+        <script src="./supermercado.js"></script>
     <!--Section End Form-->
   </body>
 </html>
