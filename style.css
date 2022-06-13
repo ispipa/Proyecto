@@ -100,7 +100,7 @@ tr:nth-child(2n) .sticky{
 #superLista{
     width: 30%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin: 20px;
     float: right;
     justify-content: space-around;
@@ -132,8 +132,12 @@ tr:nth-child(2n) .sticky{
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 400px) {
-    #carouselExampleCaptions {
-        display: none;
+#btnEliminar {
+    margin-left: 2rem;
+}
+@media screen and (max-width: 600px) {
+    #supermercados {
+        width: 100%;
+        margin: 0;
     }
 }
