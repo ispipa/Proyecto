@@ -1,4 +1,3 @@
-
 /*function response()
 {
     window.addEventListener('load', () => {
