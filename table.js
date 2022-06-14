@@ -1,16 +1,17 @@
-/*function response()
+response();
+function response()
 {
     window.addEventListener('load', () => {
         fetch('https://ispipa.github.io/Proyecto/supermercados.json')
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            //pintarResultado(data);
+            pintarResultado(data);
             //document.querySelector('#resultado').innerHTML = JSON.stringify(data);
         })
     })
 }
-response();*/
+
 validarDatos();
 function validarDatos()
 {
@@ -8179,7 +8180,7 @@ var lista_de_comprar_usuario = [];
 const formulario = document.querySelector('#validationCustom01');
 const resultado = document.querySelector('#resultado')
 
-pintarResultado(supermercados);
+//pintarResultado(supermercados);
 function pintarResultado(data)
 {
     console.log(data);
@@ -8188,6 +8189,7 @@ function pintarResultado(data)
             nombre.push(producto);
     }
     console.log(nombre);
+    filtrar();
 }
     /*categorias_productos.push(nombre.map( res => { console.log(res.categorias.platos_preparados[0].nombre); } ))
     console.log(categorias_productos);*/
@@ -8276,7 +8278,6 @@ function pintarResultado(data)
         cleanArray(categorias_productos_precio);
         cleanArray(categorias_productos);
     }
-    filtrar();
     //limpiar el arrray object
     function cleanArray(actual) 
     {
@@ -8366,7 +8367,6 @@ const cogerDatosList = () =>
 
 const cogerDatosNuevos = () => 
 {
-    //const list_a = document.getElementsByClassName("item_usuario");
     const texto = "";
     var nuevosDatos=[];
     console.log(list_a.length);
@@ -8376,9 +8376,6 @@ const cogerDatosNuevos = () =>
         {
             list_a[i].disabled = false
             console.log(list_a[i].value);
-            /*texto = list_a[i].value;
-            nuevosDatos.push(texto);
-            console.log("texto: " + texto);*/
         }
 }
 button_add_list.addEventListener('click',cogerDatosList)
