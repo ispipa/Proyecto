@@ -8191,8 +8191,6 @@ function pintarResultado(data)
     console.log(nombre);
     filtrar();
 }
-    /*categorias_productos.push(nombre.map( res => { console.log(res.categorias.platos_preparados[0].nombre); } ))
-    console.log(categorias_productos);*/
       const filtrar = ()=>
       {
         for (var i = 0; i < nombre.length; i++) 
