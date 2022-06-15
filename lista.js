@@ -211,7 +211,7 @@ function pintarResultado(data)
         {
             if((categorias_productos_nombre[i].indexOf(texto)!== -1) && (cont < 8))
             {
-                resultado.innerHTML+='<div class="col" id='+categorias_productos[i]+'">'+'<div class="card h-100">'+'<img src='+categorias_productos_img[i]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+categorias_productos_nombre[i]+'</h5>'+'<p class="card-text">'+categorias_productos_precio[i]+ '</p>'+'</div>'+'<div class="card-footer">'+'<a href="#" class="btn btn-primary">'+'Comprar'+'</a>'+'</div>'+'</div>'+'</div>'
+                resultado.innerHTML+='<div data-aos="zoom-in-right" data-aos-delay=400  class="col" id='+categorias_productos[i]+'">'+'<div class="card h-100">'+'<img src='+categorias_productos_img[i]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+categorias_productos_nombre[i]+'</h5>'+'<p class="card-text">'+categorias_productos_precio[i]+ '</p>'+'</div>'+'<div class="card-footer">'+'<a href="#" class="btn btn-primary">'+'Comprar'+'</a>'+'</div>'+'</div>'+'</div>'
                 cont++;
                 console.log(cont);
             }
