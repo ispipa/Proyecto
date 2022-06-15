@@ -7,7 +7,6 @@ function response()
         .then(data => {
             console.log(data);
             pintarResultado(data);
-            //document.querySelector('#resultado').innerHTML = JSON.stringify(data);
         })
     })
 }
@@ -240,9 +239,7 @@ const cogerDatosList = () =>
 button_add_list.addEventListener('click',cogerDatosList)
 function guardarDatos()
 {
-        localStorage.setItem("list_usuario", JSON.stringify(list_usuario));
-        var miDato = localStorage.getItem("list_usuario");
-        console.log(miDato);   
+        localStorage.setItem("list_usuario", JSON.stringify(list_usuario));  
 }
 if(localStorage.getItem("list_usuario") !== null)
     {
@@ -250,7 +247,7 @@ if(localStorage.getItem("list_usuario") !== null)
         console.log(list_usuario)
         for (var i = 0; i < list_usuario.length; i++) 
             {
-                    resultado_user_list[1].innerHTML+='<a class="list-group-item list-group-item-action" onclick=delete_list()>'+'<i  class= "item_usuario">'+list_usuario[i]+'</i>'+'<span class="badge rounded-pill bg-primary float-end"><i class="bi bi-check-lg"></i></span>'+'</a>'+'</div>'
+                    resultado_user_list[1].innerHTML+='<a class="list-group-item list-group-item-action">'+'<i  class= "item_usuario">'+list_usuario[i]+'</i>'+'<span class="badge rounded-pill bg-primary float-end"><i class="bi bi-check-lg"></i></span>'+'</a>'+'</div>'
             }
     }
     //eliminar un elemento del localsotorage y eliminar  un elemento de la lista
@@ -262,13 +259,18 @@ if(localStorage.getItem("list_usuario") !== null)
         console.log(text_list);
         console.log(e.target);
         e.target.remove(e.target);
-        for (var i =0; i< items.length; i++) 
+        for (var i =0; i < items.length; i++) 
         {
             if (items[i].indexOf(text_list) !== -1) 
             {
                 items.splice(i, 1);
             }
+            if (list_usuario[i].indexOf(text_list) !== -1) 
+            {
+                list_usuario.splice(i, 1);
+            }
         }
+        console.log(list_usuario);
         items = JSON.stringify(items);
         localStorage.setItem("list_usuario", items);
     });
