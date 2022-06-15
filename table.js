@@ -253,7 +253,7 @@ if(localStorage.getItem("list_usuario") !== null)
                     resultado_user_list[1].innerHTML+='<a class="list-group-item list-group-item-action" onclick=delete_list()>'+'<i  class= "item_usuario">'+list_usuario[i]+'</i>'+'<span class="badge rounded-pill bg-primary float-end"><i class="bi bi-check-lg"></i></span>'+'</a>'+'</div>'
             }
     }
-    //eliminar de localsotorage y eliminar  un elemento de la lista
+    //eliminar un elemento del localsotorage y eliminar  un elemento de la lista
     const parent = document.querySelector("#parent");
     parent.addEventListener('click', (e) => 
     {   
