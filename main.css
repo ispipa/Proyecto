@@ -124,6 +124,12 @@ th, td{
     color: white;
     text-align: center;
 }
+@media(max-width: 650px) {
+    .table {
+        -webkit-writing-mode: vertical-rl;
+    }
+}
+    
 
 thead{
     background-color: #246355;
