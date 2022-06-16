@@ -7,12 +7,15 @@ supermercado : psupermercado,
 producto : pproducto,
 precio : pprecio,
 cantidad: pcantidad,
-imagen : pimagen
-};
-console.log(newMarket);
-marketList.push(newMarket);
-guardarDatos(marketList);
-}
+imagen : pimagen};
+
+if (supermercado === "" || pproducto === "" || pprecio === "" || pcantidad === "") {
+	alert("Por favor llene todos los campos, la imagen es opcional");
+} else {
+	console.log(newMarket);
+	marketList.push(newMarket);
+	guardarDatos(marketList);
+}}
 
 function getMarketList() 
 {
