@@ -76,7 +76,7 @@ ul {
 }
 
 .contact-form form button {
-    background: #5fa4ae;
+    background: #4fbd72;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -85,7 +85,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #4fbd72;
+    background: #c28fcb;
     color: #fff;
     transition: background-color 0.5s ease-out;
     outline: 0;
