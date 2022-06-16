@@ -19,6 +19,7 @@ function drawFriendsTable()
  tbody.innerHTML='';
  for(var i=0;i<list.length;i++){
    var row=tbody.insertRow(i);
+   row.setAttribute("id",i);
    var supermercado=row.insertCell(0),
    producto=row.insertCell(1),
    precio=row.insertCell(2),
@@ -37,7 +38,7 @@ function drawFriendsTable()
     inputSelect.type='Button';
     inputSelect.innerText="Eliminar";
     inputSelect.setAttribute("class","btn btn-success");
-    inputSelect.value=list[i].supermercado;
+    inputSelect.setAttribute("onclick","delete_row("+i+")");
     eliminar.appendChild(inputSelect);
 
 

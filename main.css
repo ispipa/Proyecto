@@ -119,6 +119,11 @@ th, td{
     color: white;
     text-align: center;
 }
+.table>:not(caption)>*>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: white;
+    text-align: center;
+}
 
 thead{
     background-color: #246355;
