@@ -16,14 +16,18 @@ guardarDatos(marketList);
 
 function getMarketList() 
 {
-	 
-	if()
+	 var item = localStorage.getItem("list_usuario_mercados");
+	if(item == null)
 	{
-
+		marketList = [];
+	}
+	else
+	{
+		marketList = JSON.parse(item);
 	}
  	return marketList;
 }
 function guardarDatos(datos)
 {
-	localStorage.setItem("list_usuario_mercados",JSON.stringify(simdatos));
+	localStorage.setItem("list_usuario_mercados",JSON.stringify(datos));
 } 

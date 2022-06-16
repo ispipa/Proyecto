@@ -23,13 +23,24 @@ function drawFriendsTable()
    producto=row.insertCell(1),
    precio=row.insertCell(2),
    cantidad=row.insertCell(3),
-   imagen=row.insertCell(4)
+   imagen=row.insertCell(4),
+   eliminar = row.insertCell(5)
 
     supermercado.innerHTML=list[i].supermercado;
     producto.innerHTML=list[i].producto;
     precio.innerHTML=list[i].precio;
     cantidad.innerHTML=list[i].cantidad;
     imagen.innerHTML=list[i].imagen;
+
+
+    var inputSelect=document.createElement('Button');
+    inputSelect.type='Button';
+    inputSelect.innerText="Eliminar";
+    inputSelect.setAttribute("class","btn btn-success");
+    inputSelect.value=list[i].supermercado;
+    eliminar.appendChild(inputSelect);
+
+
    tbody.appendChild(row);
 }
 }
