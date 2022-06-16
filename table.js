@@ -1,4 +1,17 @@
 validarDatos();
+  //limpiar el arrray object
+  function cleanArray(actual) 
+  {
+      var newArray = [];
+      for (var i = 0; i < actual.length; i++) 
+      { 
+              if (actual[i]) {
+                  newArray.push(actual[i]);
+                }
+      }
+      console.log(newArray);
+      return newArray;
+  }
 function validarDatos()
 {
     (function () {
