@@ -1,20 +1,25 @@
 //cargar los datos
 var list_usuario = [];
 var list_usuario_estilo = [];
+var list_usuario_mercados = [];
 var recogerClases="";
-
-
+//nombres de los supermercados
+var nombre_supermercado = [];
+//cargar datos
 const resultado_user_list = document.querySelectorAll('.resultado_user_list');
+const resultado_user_list_supermercados = document.querySelector('.resultado_nombres_supermercado');
 cargarDatos();
 function cargarDatos()
 {
     list_usuario = JSON.parse(localStorage.getItem("list_usuario"));
     list_usuario_estilo = JSON.parse(localStorage.getItem("list_usuario_estilo"));
+    list_usuario_mercados = JSON.parse(localStorage.getItem("list_usuario_mercados"));
     console.log(list_usuario)
     for (var i = 0; i < list_usuario.length; i++) 
         {
             resultado_user_list[0].innerHTML+='<a class="list-group-item list-group-item-action">'+'<i  class= "item_usuario">'+list_usuario[i]+'</i>'+'<span class="badge rounded-pill bg-primary float-end"><i class='+list_usuario_estilo[i]+'>'+'</i>'+'</span>'+'</a>'+'</div>'
         }
+        cogerDatosSupermercados(list_usuario_mercados);
 }
 
 //cambiar lista estilo
@@ -22,8 +27,6 @@ const parent = document.querySelector("#parent");
     parent.addEventListener('click', (e) => 
     {   
         list_usuario = JSON.parse(localStorage.getItem("list_usuario"));
-        //console.log(document.getElementsByClassName(e.target.childNodes[1].childNodes[0].className));
-        //var class_name = document.getElementsByClassName(e.target.childNodes[1].childNodes[0].className);
         var class_name = e.target.childNodes[1].childNodes;
         console.log(class_name);
         for (let opcion of  class_name) 
@@ -54,7 +57,7 @@ function response()
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            pintarResultado(data);
+            cogerDatosProductos(data);
         })
     })
 }
@@ -86,12 +89,33 @@ var categorias_productos_img = [];
 var categorias_productos_precio = [];
 var categorias_productos = [];
 var lista_de_comprar_usuario = [];
+
 //coger los valores del usuario
 const formulario = document.querySelector('#validationCustom01');
 const resultado = document.querySelector('#resultado')
-
-//pintarResultado(supermercados);
-function pintarResultado(data)
+//coger datos supermercados
+function cogerDatosSupermercados(data)
+{
+    console.log(typeof(data[0].supermercado));
+        for(let producto of data)
+        {
+            nombre_supermercado.push(producto.supermercado);
+        }
+        cleanArray(nombre_supermercado);
+    console.log(nombre_supermercado);
+    pintarNombreSupermercados();
+}
+//pintamos los supermercados
+function pintarNombreSupermercados()
+{
+    console.log(nombre_supermercado)
+    for (var i = 0; i < nombre_supermercado.length; i++) 
+            {
+                resultado_user_list_supermercados.innerHTML+='<div class="form-check">'+'<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">'+'<label class="form-check-label" for="flexCheckDefault">'+nombre_supermercado[i]+' </label>'+' </div>'
+            }
+}
+//coger datos del Json
+function cogerDatosProductos(data)
 {
     console.log(data);
     for(let producto of Object.values(data))
