@@ -251,3 +251,10 @@ function cogerDatosProductos(data)
     }
     //boton.addEventListener('click',filtrar)
     formulario.addEventListener('keyup',buscarDatos)
+
+const checkbox = document.getElementById('flexCheckDefault');
+checkbox.addEventListener('change', function() {
+    if (this.checked) {
+        
+    }
+});

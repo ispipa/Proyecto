@@ -60,7 +60,7 @@ const cogerDatosList = () =>
     }
     else
     {
-        alert("añade un producto a tu lista");
+        alert("Añade un producto a tu lista");
         console.log(list_usuario);
        
     }
