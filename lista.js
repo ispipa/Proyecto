@@ -251,4 +251,3 @@ function cogerDatosProductos(data)
     }
     //boton.addEventListener('click',filtrar)
     formulario.addEventListener('keyup',buscarDatos)
-
