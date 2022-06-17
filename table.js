@@ -116,4 +116,8 @@ if(localStorage.getItem("list_usuario") !== null)
             localStorage.setItem("list_usuario_estilo", items2);
         }
     });
-    
+
+const barraBusqueda = document.getElementById("validationCustom01");
+const resultado = barraBusqueda.value;
+const btnAgregar = document.getElementById("btnAgregar");
+
